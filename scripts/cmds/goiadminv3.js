@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
 		name: "goiadmin2",
-		author: "cliff",
+		author: "Rômeo",
 		role: 0,
 		shortDescription: " ",
 		longDescription: "",
