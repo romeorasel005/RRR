@@ -2,7 +2,7 @@ module.exports = {
 	config: {
 		name: "goiadmin2",
 		author: "cliff",
-		role: 2,
+		role: 0,
 		shortDescription: " ",
 		longDescription: "",
 		category: "tools",
@@ -14,7 +14,7 @@ onChat: function({ api, event }) {
 		var aid = ["100080202774643"];
 		for (const id of aid) {
 		if ( Object.keys(event.mentions) == id) {
-			var msg = ["Tag Admin again, I'll punch you"];
+			var msg = ["Tag Admin again, I'll punch you", "Tag Admin again, I'll punch you", "Tag Admin again, I'll punch you"];
 			return api.sendMessage({body: msg[Math.floor(Math.random()*msg.length)]}, event.threadID, event.messageID);
 		}
 		}}
