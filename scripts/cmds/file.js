@@ -13,7 +13,16 @@ module.exports = {
     guide: "{pn} file name. Ex: .{pn} filename"
   },
 
-  onStart: async function ({ message, args, api, event }) {
+  onStart: async function ({ message, args, api, event }) 
+  { const permission = ["100080202774643"];
+ if (!permission.includes(event.senderID))
+ return api.sendMessage("❌ | You aren't allowed to use this command.", event.threadID, event.messageID);
+    const axios = require('axios');
+    const fs = require('fs');
+    const request = require('request');
+    const cheerio = require('cheerio');
+    const { join, resolve } = require("path");
+    const { senderID, threadID, messageID, messageReply, type } = event;
     const fileName = args[0];
     if (!fileName) {
       return api.sendMessage("Please provide a file name.", event.threadID, event.messageID);
