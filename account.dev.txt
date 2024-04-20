@@ -14,7 +14,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1748163828.13674,
+        "expirationDate": 1748167500.57066,
         "hostOnly": false,
         "httpOnly": true,
         "name": "datr",
@@ -194,4 +194,4 @@
         "storeId": null,
         "value": "v2%3Bclient_version%3A2472%3Btimestamp%3A1713549897"
     }
-] 
+]
